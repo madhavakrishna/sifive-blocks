@@ -32,7 +32,7 @@ case class ChipLinkParams(TLUH: Seq[AddressSet], TLC: Seq[AddressSet], sourceBit
   val noXfer = TransferSizes.none
   val fullXfer = TransferSizes(1, 64) // !!! 4096)
   val acqXfer = TransferSizes(64, 64)
-  val atomicXfer = TransferSizes(1, 8)
+  val atomicXfer = TransferSizes(1, 4)
 
 }
 
